@@ -50,7 +50,7 @@
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/ninocphilip" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             <a href="https://github.com/ninocphilip237" class="github"><i class="bx bxl-github"></i></a>
-             <a href="#" class="email"><i class="bx bx-mail-send"></i></a>
+            <a href="./download.php" class="email"><i class="bx bxs-download"></i></a>
               <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
               <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
 
@@ -76,11 +76,16 @@
       <h1>Nino C Philip</h1>
       <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
     </div>
-    <div>
+    <!-- <div> -->
 
-      <button  class="button-18" role="button" id="myBtn">Get Resume </button>
+      <!-- <button    class="button-18">Get Resume </button> -->
+      <!-- <a href='https://ide.geeksforgeeks.org/'> -->
+        <!-- <button class="GFG">
+            Click Here
+        </button>
+    </a>
 
-    </div>
+    </div> -->
   </section>
   <!-- End Hero -->
 
