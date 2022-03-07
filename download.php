@@ -7,7 +7,6 @@ if(isset($_REQUEST["file"])){
     such as "../" using the regular expression */
     if(preg_match('/^[^.][-a-z0-9_.]+[a-z]$/i', $file)){
         $filepath = "images/" . $file;
-
         // Process download
         if(file_exists($filepath)) {
             header('Content-Description: File Transfer');
