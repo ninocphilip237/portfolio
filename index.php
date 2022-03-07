@@ -66,17 +66,11 @@
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/ninocphilip" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             <a href="https://github.com/ninocphilip237" class="github"><i class="bx bxl-github"></i></a>
-<<<<<<< HEAD:index.html
             <a href="https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing"
             class="resume"><i class="bx bxs-download"></i></a>
               <a href="http://wa.me/919645530655" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
               <a href="https://join.skype.com/invite/WDIwc6kwIHwT" class="skype"><i class="bx bxl-skype"></i></a>
               <a href="https://twitter.com/ninocphilip237" class="twitter"><i class="bx bxl-twitter"></i></a>
-=======
-            <a href="./download.php" class="email"><i class="bx bxs-download"></i></a>
-              <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-              <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
->>>>>>> 571705960eecc85c8d1b4298b015b48bffa26c38:index.php
 
 
         </div>
@@ -101,17 +95,7 @@
       <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
             <button type="button" class="btn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'" style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
 
-    </div>
-    <!-- <div> -->
-
-      <!-- <button    class="button-18">Get Resume </button> -->
-      <!-- <a href='https://ide.geeksforgeeks.org/'> -->
-        <!-- <button class="GFG">
-            Click Here
-        </button>
-    </a>
-
-    </div> -->
+    </div>s
   </section>
 
   <!-- End Hero -->
