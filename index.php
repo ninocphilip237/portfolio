@@ -93,9 +93,16 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>Nino C Philip</h1>
       <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
-            <button type="button" class="btn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'" style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
-
-    </div>s
+      <?php
+        $images = array("ninocphilip_updated.pdf");
+        foreach($images as $image){
+            // <button type="button" class="btn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'" style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
+          // <a href="#"><button>Text</button></a>
+            // <button type="button" class="btn"  style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
+ echo '<p><a href="download.php?file=' . urlencode($image) . '"><button type="button" class="btn" style="width:100%"><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;&nbsp; Download Resume</button></a></p>';
+      }
+       ?>
+    </div>
   </section>
 
   <!-- End Hero -->
