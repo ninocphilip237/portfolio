@@ -27,6 +27,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet'/>
+<link href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet'/>
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
@@ -48,6 +50,69 @@
 .btn:hover {
   background-color: RoyalBlue;
 }
+
+
+.dnbtn {
+  border: 2px solid #0ff;
+  border-radius: 50px;
+  position: absolute;
+  color: #0ff;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 33px;
+  text-decoration: none;
+  transition: .3s;
+  background-color: rgba(255,255,255,0);
+}
+
+.dnbtn:before {
+  font-family: 'ionicons';
+  content: '\f2dd';
+  font-size: 26px;
+color: #0ff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+}
+
+.dnbtn:hover:before {
+  display: none;
+}
+
+.dnbtn:hover:after {
+  font-family: Prompt;
+  content: 'DOWNLOAD';
+  color: #0ff;
+  font-size: 18px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+  animation: fadein .3s;
+}
+
+.dnbtn:hover {
+  width: 160px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 </style>
 </head>
 
@@ -66,7 +131,7 @@
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/ninocphilip" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             <a href="https://github.com/ninocphilip237" class="github"><i class="bx bxl-github"></i></a>
-            <a href="https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing" 
             class="resume"><i class="bx bxs-download"></i></a>
               <a href="http://wa.me/919645530655" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
               <a href="https://join.skype.com/invite/WDIwc6kwIHwT" class="skype"><i class="bx bxl-skype"></i></a>
@@ -92,12 +157,24 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Nino C Philip</h1>
-      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
-            <button type="button" class="btn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'" style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
+      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p> 
+            <!-- <button type="button" class="btn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'" style="width:100%"><i class="fa fa-download"></i> Download Resume</button> -->
+            <!--<div align="center" class="dnbtn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'"></div>-->
+                  <button  class="dnbtn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'" </button>
+
 
     </div>
-  </section>
+    <!-- <div> -->
 
+      <!-- <button    class="button-18">Get Resume </button> -->
+      <!-- <a href='https://ide.geeksforgeeks.org/'> -->
+        <!-- <button class="GFG">
+            Click Here
+        </button>
+    </a>
+
+    </div> -->
+  </section>
   <!-- End Hero -->
 
   <main id="main">

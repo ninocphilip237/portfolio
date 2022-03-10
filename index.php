@@ -27,28 +27,92 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet'/>
+ <link href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet'/>
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-    <style>
-.btn {
+  <style>
+  .btn {
   background-color: DodgerBlue;
   border: none;
   color: white;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
-}
+  }
 
-/* Darker background on mouse-over */
-.btn:hover {
+  /* Darker background on mouse-over */
+  .btn:hover {
   background-color: RoyalBlue;
-}
-</style>
+  }
+
+
+  .dnbtn {
+  border: 2px solid #0ff;
+  border-radius: 50px;
+  position: absolute;
+  color: #0ff;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 33px;
+  text-decoration: none;
+  transition: .3s;
+  background-color: rgba(255,255,255,0);
+  }
+
+  .dnbtn:before {
+  font-family: 'ionicons';
+  content: '\f2dd';
+  font-size: 26px;
+  color: #0ff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+  }
+
+  .dnbtn:hover:before {
+  display: none;
+  }
+
+  .dnbtn:hover:after {
+  font-family: Prompt;
+  content: 'DOWNLOAD';
+  color: #0ff;
+  font-size: 18px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+  animation: fadein .3s;
+  }
+
+  .dnbtn:hover {
+  width: 160px;
+  }
+
+  @keyframes fadein {
+  from {
+  opacity: 0;
+  }
+  to {
+  opacity: 1;
+  }
+  }
+
+  @keyframes fadeout {
+  from {
+  opacity: 1;
+  }
+  to {
+  opacity: 0;
+  }
+  }
+  </style>
 </head>
 
 <body>
@@ -99,7 +163,7 @@
             // <button type="button" class="btn" onclick="location.href='https://drive.google.com/file/d/1C_AJJIcG4jTfjTpMLx5YOLBHrmUPPZ5o/view?usp=sharing'" style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
           // <a href="#"><button>Text</button></a>
             // <button type="button" class="btn"  style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
- echo '<p><a href="download.php?file=' . urlencode($image) . '"><button type="button" class="btn" style="width:100%"><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;&nbsp; Download Resume</button></a></p>';
+ echo '<p><a href="download.php?file=' . urlencode($image) . '"><button  class="dnbtn" ></button></a></p>';
       }
        ?>
     </div>
